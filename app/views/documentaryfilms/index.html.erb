@@ -1,0 +1,14 @@
+<h1>Documentaryfilms#index</h1>
+<p>Find me in app/views/documentaryfilms/index.html.erb</p>
+
+
+<p><%=  @documentaryfilms.count if !@documentaryfilms.nil?  %></p>
+
+<% @documentaryfilms.each do |documentaryfilm| %>
+    <h2><%= documentaryfilm.name %></h2>
+    <p><%= documentaryfilm.synopsis %></p>
+    <p><%= documentaryfilm.director %></p>
+    
+    <% end %>    
+    
+<div>

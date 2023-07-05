@@ -1,0 +1,27 @@
+<h1 class="text-center">Ingresar Datos de la Pelicula</h1>
+
+    <br><br>
+<div class="card-col-6">
+    <%= form_with model: @movies, method: :post do |form| %>
+        <div class="border p-5 shadow">
+        <div class="mb-4">
+                <%= form.label :name, "Nombre del Documental", class:"form-label" %>
+                <%= form.text_field :name, class:"form-control" %>
+            </div>
+            <div class="mb-5">
+                <%= form.label :synopsis, "Synopsis del documental", class:"form-label" %>
+                <%= form.text_field :synopsis, class:"form-control" %>
+            </div>
+             <div class="mb-6">
+                <%= form.label :director, " Director", class:"form-label" %>
+                <%= form.text_field :director, class:"form-control" %>
+            </div>
+            <div class="text-center">
+                <%= form.submit "Enviar", class:"btn btn-dark" %>
+            </div>
+        </div>
+    <% end %>
+
+</div>
+
+
