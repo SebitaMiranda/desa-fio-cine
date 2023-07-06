@@ -14,14 +14,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_05_013551) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "documentary_films", force: :cascade do |t|
-    t.string "name"
-    t.string "synopsis"
-    t.string "director"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "documentaryfilms", force: :cascade do |t|
     t.string "name"
     t.string "synopsis"

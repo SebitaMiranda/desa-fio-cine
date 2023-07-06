@@ -1,2 +1,14 @@
-<h1>Movies#index</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
+<h1>Lista de Peliculas</h1>
+
+
+
+<p><%=  @movies.count if !@movies.nil?  %></p>
+
+<% @movies.each do |movie| %>
+    <h2><%= movie.name %></h2>
+    <p><%= movie.synopsis %></p>
+    <p><%= movie.director %></p>
+    
+    <% end %>    
+    
+<div>

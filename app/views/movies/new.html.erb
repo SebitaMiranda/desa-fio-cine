@@ -2,14 +2,14 @@
 
     <br><br>
 <div class="card-col-6">
-    <%= form_with model: @movies, method: :post do |form| %>
+    <%= form_with model: @movie, method: :post do |form| %>
         <div class="border p-5 shadow">
         <div class="mb-4">
-                <%= form.label :name, "Nombre del Documental", class:"form-label" %>
+                <%= form.label :name, "Nombre de la pelicula", class:"form-label" %>
                 <%= form.text_field :name, class:"form-control" %>
             </div>
             <div class="mb-5">
-                <%= form.label :synopsis, "Synopsis del documental", class:"form-label" %>
+                <%= form.label :synopsis, "Synopsis de la pelicula", class:"form-label" %>
                 <%= form.text_field :synopsis, class:"form-control" %>
             </div>
              <div class="mb-6">

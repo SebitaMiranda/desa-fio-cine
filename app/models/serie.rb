@@ -1,5 +1,5 @@
 class Serie < ApplicationRecord
-    validates :index, presence: true
-    validates :create, presence: true
-    validates :new, presence: true
+    validates :name, presence: true
+    validates :synopsis, presence: true
+    validates :director, presence: true
 end

@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   get 'documentaryfilms/index'
-  post 'documentaryfilms',      to:"documentaryfilm#create"
+  post 'documentaryfilms',      to:"documentaryfilms#create"
   get 'documentaryfilms/new'
   get 'series/index'
-  get 'series/create'
+  post 'series',            to:"series#create"
   get 'series/new'
   get 'movies/index'
-  get 'movies/create'
+  post 'movies',            to:"movies#create"
   get 'movies/new'
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

@@ -1,7 +1,11 @@
 class MoviesController < ApplicationController
   def index
     @movies = Movie.all
-    pp @movies
+    
+  end
+
+  def new
+    @movie = Movie.new
   end
 
   def create
@@ -13,11 +17,6 @@ class MoviesController < ApplicationController
         render :new
       end
   end
-
-  def new
-    @movie = Movie.new
-  end
-
 
   private
   def movie_params

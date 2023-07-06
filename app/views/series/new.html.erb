@@ -1,2 +1,25 @@
-<h1>Series#new</h1>
-<p>Find me in app/views/series/new.html.erb</p>
+<h1 class="text-center">Ingresar Datos de las Series</h1>
+
+    <br><br>
+<div class="card-col-6">
+    <%= form_with model: @serie, method: :post do |form| %>
+        <div class="border p-5 shadow">
+        <div class="mb-4">
+                <%= form.label :name, "Nombre de la Serie", class:"form-label" %>
+                <%= form.text_field :name, class:"form-control" %>
+            </div>
+            <div class="mb-5">
+                <%= form.label :synopsis, "Synopsis de la serie", class:"form-label" %>
+                <%= form.text_field :synopsis, class:"form-control" %>
+            </div>
+            <div class="mb-6">
+                <%= form.label :director, " Director", class:"form-label" %>
+                <%= form.text_field :director, class:"form-control" %>
+            </div>
+            <div class="text-center">
+                <%= form.submit "Enviar", class:"btn btn-dark" %>
+            </div>
+        </div>
+    <% end %>
+
+</div>

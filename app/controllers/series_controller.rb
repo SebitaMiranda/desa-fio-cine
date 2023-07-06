@@ -1,9 +1,14 @@
 class SeriesController < ApplicationController
   def index
     @series = Serie.all
-    pp @series
+  
   end
 
+    def new
+    @serie = Serie.new
+  end
+
+  
   def create
     @serie = Serie.new(serie_params)
   
@@ -12,10 +17,6 @@ class SeriesController < ApplicationController
       else
         render :new
       end
-  end
-
-  def new
-    @serie = Serie.new
   end
 
   private
